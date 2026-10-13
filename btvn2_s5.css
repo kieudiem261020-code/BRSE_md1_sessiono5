@@ -1,0 +1,24 @@
+body{
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    width: 400px;
+}
+li{
+    background-color: #b0b0b0;
+    color: #000000;
+    padding: 12px 15px;
+    margin-bottom: 8px
+}
+    .nomal-list li:hover,
+    .hover-list li:hover{
+        background-color: #555555;
+        color: #ffffff;
+}
+.hover-list .active-hover{
+    background-color: #555555;
+    color:#ffffff;
+    }

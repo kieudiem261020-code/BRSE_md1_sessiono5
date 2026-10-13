@@ -1,0 +1,22 @@
+body{
+    font-family: Arial, sans-serif;
+    padding: 50px;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: #008000;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+.normal-box:hover{
+    transform: rotate(45deg);
+}
+.rotated-box{
+    transform: rotate(45deg);
+}
