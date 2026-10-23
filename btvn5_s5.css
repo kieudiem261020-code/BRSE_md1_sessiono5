@@ -1,0 +1,116 @@
+/*reset css mặc định*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #f8f9fa;
+    padding: 20px;
+    color: #444746;
+}
+.table-container{
+    background: white;
+    border-radius: 16px;
+    padding: 16px 24px;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+/*Header Breadcrumb*/
+.breadcrumb{
+    font-size: 18px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #444746;
+}
+.breadcrumb .folder-name{
+    font-weight: 500;
+}
+.breadcrumb .icon-arrow{
+    font-size: 12px;
+    color: #747775;
+}
+/* bang*/
+.file-table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+.file-table th, 
+.file-table td{
+    padding: 10px 12px;
+    text-align: left;
+    vertical-align: middle;
+}
+/*tiêu đề cột*/
+.file-table th {
+    color: #444746;
+    font-weight: 500;
+    border-bottom: 1px solid #e0e0e0;
+}
+.file-table th i{
+    font-size: 11px;
+    margin-left: 4px;
+}
+.file-table tbody tr{
+    border-bottom: 1px solid #f2f2f2;
+    cursor: pointer;
+}
+.file-table tbody tr:hover{
+    background-color: #f1f3f4;
+}
+/*highlight xanh*/
+.file-table tbody tr.selected {
+    background-color: #c2e7ff;
+    color: #001d35;
+}
+/* icon*/
+.icon-red{
+    color: #d93025;
+    margin-right: 8px;
+    font-size: 16px;
+}
+.icon shared{
+    font-size: 10px;
+    color: #747775;
+    margin-left: 6px;
+}
+/*Cột*/
+.col-owner{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.avatar{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    min-width: 22px;
+    min-height: 22px;
+    flex-shrink: 0;
+    background-color: #a50e0e;
+    color: white;
+    border-radius: 50%;
+    font-size: 11px;
+    font-weight: bold;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+/*Độ rộng*/
+.col-name {width: 45%;}
+.col-owner {width: 20%;}
+.col-date {width: 18%;}
+.col-size {width: 12%;}
+.col-action {
+    width: 5%;
+    text-align: right;
+    color: #747775;
+}
+
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="btvn6_s5.css">
+</head>
+<body>
+    <div class="app-layout">
+        <!--Bên trái-->
+        <aside class="sidebar"> 
+            <div class="logo">
+                <i class="fa-solid fa-hard-drive logo-icon"></i>Drive
+            </div>
+            <button class="btn-new">
+                <i class="fa-solid fa-plus"></i> New
+            </button>
+            <nav class="nav-menu">
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-house"></i> Home
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-folder-open"> Projects</i>
+                </a>
+                <div class="nav-divider"></div>
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-caret-right"></i>
+                    <i class="fa-regular fa-hard-drive"></i> My Drive
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-caret-right"></i>
+                    <i class="fa-solid fa-laptop"></i> Computers
+                </a>
+                <div class="nav-divider"></div>
+                <a href="#" class="nav-item active">
+                    <i class="fa-solid fa-user-group"></i> Shared with me 
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fa-regular fa-clock"></i> Recent
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fa-regular fa-star"></i> Starred
+                </a>
+                <div class="nav-divider"></div>
+                <a href="#" class="nv-item">
+                    <i class="fa-regular fa-cicrle-exclamation"></i> Spam
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fa-regular fa-traash-can"></i> Trash
+                </a>
+                <a href="#" class="bav-item">
+                    <i class="fa-solid fa-cloud"></i> Storage
+                </a>
+            </nav>
+            <!--Dung luong-->
+            <div class="storage-info">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <div class="storage-text">4.65 GB of 15 GB used </div>
+                <button class="btn-get-storsge">Get more storage</button>
+            </div>
+            </aside>
+            <!--Noi dung chinh-->
+            <main class="main-content">
+                <!--Header-->
+                <div class="drive-header">
+                    <span> Shared with me</span>
+                    <i class="fa-solid fa-chevron-right separator"></i>
+                    <span class="folder-title">position properties</span>
+                    <i class="fa-solid fa-caret-down"></i>
+                    <i class="fa-solid fa-user-group header-shared"></i>
+                </div>
+                <!--danh sach-->
+                <div class="table-card">
+                    <table class="drive-table">
+                        <thead>
+                            <tr>
+                                <th class="col-name">Name <i class="fa-solid fa-arrow-up"></i></th>
+                                <th class="col-owner">Owner </th>
+                                <th class="col-date">Date modified</th>
+                                <th class="col-size">File size</th>
+                                <th class="col-action"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="col-name">
+                                    <i class="fa-regular fa-image file-icon"></i>
+                                    01.png
+                                    <i class="fa-solid fa-ban not-shared-icon"></i>
+                                </td>
+                                <td class="col-owner">
+                                    <span class="owner-avatar">S</span>support
+                                </td>
+                                <td class="col-date">Aug 14, 2022</td>
+                                <td class="col-size"> 242 KB</td>
+                                <td class="col-action"><i class="fa-solid fa-ellpsis-vertical"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="col-name">
+                                    <i class="fa-regular fa-image file-icon"></i>
+                                    02.jpg
+                                    <i class="fa-solid fa-ban not-shared-icon"></i>
+                                </td>
+                                <td class="col-owner">
+                                    <span class="owner-avatar">S</span>support
+                                </td>
+                                <td class="col-date">Aug 14, 2022</td>
+                                <td class="col-size"> 177 KB</td>
+                                <td class="col-action"><i class="fa-solid fa-ellpsis-vertical"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="col-name">
+                                    <i class="fa-regular fa-image file-icon"></i>
+                                    03.jpg
+                                    <i class="fa-solid fa-ban not-shared-icon"></i>
+                                </td>
+                                <td class="col-owner">
+                                    <span class="owner-avatar">S</span>support
+                                </td>
+                                <td class="col-date">Aug 14, 2022</td>
+                                <td class="col-size"> 118 KB</td>
+                                <td class="col-action"><i class="fa-solid fa-ellpsis-vertical"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+
+    </div>
+    
+</body>
+</html>

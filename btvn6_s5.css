@@ -1,0 +1,219 @@
+/*reset css mặc định*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;
+    color: #444746;
+    font-size: 13Px;
+}
+/*bố cục*/
+.app-layout{
+    display: flex;
+    min-height: 100vh;
+}
+/*sidebar*/
+.sidebar{
+    width: 240px;
+    background-color: #f8f9fa;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+.logo{
+    font-size: 18px;
+    font-weight: bold;
+    color: #444746;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+.logo-icon{
+    color: #1a73e8;
+    font-size: 22px;
+}
+.btn-new{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px;
+    background-color: #ffffff;
+    border: 1px solid #dadce0;
+    border-radius: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #3c4043;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    margin-bottom: 16px;
+    width: fit-content;
+}
+.btn-new:hover{
+    background-color: #f1f3f4;
+}
+/*menu*/
+.nav-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.nav-item{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #444746;
+    border-radius: 20px;
+    font-size: 13px;
+}
+.nav-item i {
+    width: 16px;
+    text-align: center;
+    font-size: 14px;
+}
+.nav-item:hover{
+    background-color: #e8eaed;
+}
+.nav-item.active{
+    background-color: #c2e7ff;
+    color: #001d35;
+    font-weight: 500;
+}
+.nav-divider{
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 0px 0;
+}
+/*storage*/
+.storage-info{
+    margin-top: auto;
+    padding-top: 16px;
+}
+.proggress-bar{
+    width: 100%;
+    height: 4px;
+    background-color: #e0e0e0;
+    border-radius: 2px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+.progress-fill{
+    width: 31%;
+    height: 100%;
+    background-color: #1a73e8;
+}
+.storage-text{
+    font-size: 11px;
+    color: #5f6368;
+    margin-bottom: 10px;
+}
+.btn-get-storage{
+    background: none;
+    border: 1px solid #dadce0;
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-size: 12px;
+    color: #1a73e8;
+    cursor: pointer;
+}
+.btn-get-storage:hover{
+    background-color: #f1f3f4;
+}
+/*main*/
+.main-content{
+    flex-grow: 1;
+    padding: 20px 30px;
+}
+.drive-header{
+    font-size: 18px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #1f1f1f;
+}
+.drive-header.separator{
+    font-size: 11px;
+    color: #747775;
+}
+.drive-header.folder-title{
+    font-weight: 500;
+}
+.drive-header.fa-caret-down,
+.drive-header.header-shared{
+    font-size: 12px;
+    color: #747775;
+}
+/*khung bang*/
+.table-card{
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+.drive-table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+.drive-table th,
+.drive-table td{
+    padding: 10px 12px;
+    border-bottom: 1px solid #f1f3f4;
+    vertical-align: middle;
+}
+.drive-table th{
+    font-weight: 500;
+    color: #444746;
+    font-size: 13px;
+}
+.drive-table th i {
+    font-size: 11px;
+    margin-left: 4px;
+}
+.dirve-table tbody tr:hover{
+    background-color: #f1f3f4;
+    cursor: pointer;
+}
+.file-icon{
+    color: #d93025;
+    margin-right: 8px;
+    font-size: 16px;
+}
+.shared-icon, .not-shared-icon{
+    font-size: 11px;
+    color: #737775;
+    margin-left: 6px;
+}
+.col-owner{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.owner-avatar{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    min-width: 22px;
+    min-height: 22px;
+    flex-shrink: 0;
+    background-color: #7d1222;
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 11px;
+    font-weight: bold;
+}
+.col-name{width: 45%;}
+.col-owner{width: 22%;}
+.col-date{width: 18%;}
+.col-size{width: 10%;}
+.col-action{width: 5%; text-align: right; color: #747775;}
+    
